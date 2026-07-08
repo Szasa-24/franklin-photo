@@ -1,0 +1,8 @@
+{
+  "firestore": {
+    "databaseId": "ai-studio-franklinphoto-368ea35f-317b-4dee-8dfa-9d38f59dd608",
+    "rules": "firestore.rules",
+    "edition": "ENTERPRISE",
+    "dataAccessMode": "FIRESTORE_NATIVE"
+  }
+}
