@@ -1,0 +1,109 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[hungarian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+% Színpaletta definíciók
+\definecolor{darkblue}{HTML}{1A365D}
+\definecolor{primaryblue}{HTML}{2B6CB0}
+\definecolor{darkgray}{HTML}{2D3748}
+\definecolor{lightgray}{HTML}{EDF2F7}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primaryblue,
+    urlcolor=primaryblue,
+    pdftitle={Hatalovics Sandor CV},
+    pdfpagemode=FullScreen,
+}
+
+% Címsor formázások
+\titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\titleline{\color{primaryblue}}]
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+\setlist[itemize]{leftmargin=12pt, noitemsep, topsep=2pt}
+
+\begin{document}
+\pagestyle{empty}
+
+% FEJLÉC (Név, Cím és Fénykép)
+\begin{minipage}[t]{0.75\textwidth}
+    {\Huge\bfseries\color{darkblue} HATALOVICS SÁNDOR} \\[4pt]
+    {\large\bfseries\color{primaryblue} Gazdaságinformatikus és Informatikus Hallgató | Full-Stack Webfejlesztő} \\[8pt]
+    \begin{tabular}{ll}
+        \textbf{E-mail:} \href{mailto:sandorhatalovics@gmail.com}{sandorhatalovics@gmail.com} & \textbf{GitHub:} \href{https://github.com/Szasa-24}{github.com/Szasa-24} \\
+        \textbf{Telefon:} +36 30 798 2251 & \textbf{LinkedIn:} \href{https://linkedin.com}{linkedin.com/in/sandor-hatalovics} \\
+        \textbf{Munkavégzés:} 100\% Home Office (Távmunka) & \textbf{Időbeosztás:} Részmunkaidő (heti max. 30 óra)
+    \end{tabular}
+\end{minipage}
+\begin{minipage}[t]{0.23\textwidth}
+    \raggedleft
+    % Ha van fényképed, nevezd el profile.jpg-nek és tedd a .tex fájl mellé.
+    % Ha nincs fényképed, kommenteld ki az alábbi sort.
+    \includegraphics[width=2.8cm,height=3.5cm,keepaspectratio]{profile.jpg}
+\end{minipage}
+
+\vspace{10pt}
+
+% BEMUTATKOZÁS
+\section{Bemutatkozás / Személyes profil}
+{\color{darkgray}
+A Miskolci Egyetem gazdaságinformatikus, valamint a beregszászi II. Rákóczi Ferenc Kárpátaljai Magyar Egyetem informatika szakos hallgatójaként célom, hogy elméleti tudásomat komoly gyakorlati, full-stack projektekben kamatoztassam. Tapasztalattal rendelkezem Next.js, TypeScript, PostgreSQL és Firebase alapú webalkalmazások fejlesztésében. Képes vagyok önállóan és precízen dolgozni, gyorsan alkalmazkodom az új technológiákhoz, és elkötelezett vagyok a tiszta, karbantartható kód írása mellett.
+}
+
+% KIEMELT PROJEKTEK
+\section{Kiemelt Projektek}
+
+\textbf{1. Franklin Photo -- Premium Client Gallery \& Admin Dashboard} \hfill \href{https://franklin-photo.vercel.app/}{franklin-photo.vercel.app}
+\begin{itemize}
+    \item \textbf{Leírás:} Egy komplett, biztonságos ügyfélportál és fotós adminisztrációs felület iskolai rendezvények (pl. szalagavatók) lebonyolítására. Az admin panelen a fotós galériákat kezelhet és képeket tölthet fel bulk módban a felhőbe. A kliensek egyedi kódokkal léphetnek be a galériájukba, ahol a képeket megtekinthetik és szerveroldali ZIP-tömörítéssel egy kattintással letölthetik.
+    \item \textbf{Technológiák:} Next.js 15 (App Router), React 19, TypeScript, TailwindCSS v4, Motion (animations), PostgreSQL, Drizzle ORM, Firebase Auth, Firebase Admin SDK, Vercel Blob Storage, Node.js (\texttt{archiver}, \texttt{busboy}).
+    \item \textbf{Kód:} \href{https://github.com/Szasa-24/franklin-photo}{github.com/Szasa-24/franklin-photo}
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{2. Hatalyx Studio Web} \hfill \href{https://github.com/Szasa-24/hatalyx-studio-web}{github.com/Szasa-24/hatalyx-studio-web}
+\begin{itemize}
+    \item \textbf{Leírás:} Egy modern, magas vizuális minőségű webfejlesztő ügynökségi bemutató oldal scroll-animációkkal és teljes kétnyelvű (magyar/angol) támogatással, amely a React Context API-ra épül.
+    \item \textbf{Technológiák:} Next.js (App Router), React, TypeScript, TailwindCSS, Motion, React Context API.
+\end{itemize}
+
+% TECHNIKAI KÉSZSÉGEK
+\section{Technikai készségek és ismeretek}
+\begin{itemize}
+    \item \textbf{Frontend:} Next.js (App Router), React, TypeScript, JavaScript (ES6+), TailwindCSS (v4), CSS3, HTML5, Responsive UI/UX Design, Figma (UI/UX tervek használata).
+    \item \textbf{Backend \& API:} Node.js (Next.js API Routes / Route Handlers), Firebase Admin SDK, REST API tervezés, JWT (JSON Web Tokens), BcryptJS (titkosítás).
+    \item \textbf{Adatbázisok:} PostgreSQL, Drizzle ORM, SQL, Relációs adatbázis-tervezés és lekérdezések.
+    \item \textbf{Eszközök \& DevOps:} Git / GitHub, Vercel, Firebase Console, Unix-alapú rendszerek (FreeBSD), terminál kezelése, LaTeX (dokumentumszerkesztés).
+    \item \textbf{Programozási nyelvek:} TypeScript, JavaScript, Python, C++.
+\end{itemize}
+
+% TANULMÁNYOK
+\section{Tanulmányok}
+\textbf{Miskolci Egyetem} \hfill 2025 -- Jelenleg is
+\begin{itemize}
+    \item Gazdaságinformatikus szakos hallgató
+\end{itemize}
+\vspace{4pt}
+\textbf{II. Rákóczi Ferenc Kárpátaljai Magyar Egyetem (Beregszász)} \hfill 2025 -- Jelenleg is
+\begin{itemize}
+    \item Informatika szakos hallgató (Levelező tagozat)
+\end{itemize}
+
+% ERŐSSÉGEK
+\section{Kompetenciák és erősségek}
+\begin{itemize}
+    \item \textbf{Full-Stack szemlélet:} Képesség a kliens- és szerveroldali folyamatok együttes átlátására, az adatbázis-tervezéstől a frontend finomhangolásáig.
+    \item \textbf{Önállóság és Precizitás:} Képesség komplex rendszerek önálló felépítésére és hibakeresésére, ami elengedhetetlen a 100\%-os távoli munkavégzéshez.
+    \item \textbf{Szakmai Angol:} Angol nyelvű technikai dokumentációk olvasása, írása és folyamatos fejlődés a beszélt nyelvi kommunikációban.
+\end{itemize}
+
+\end{document}
